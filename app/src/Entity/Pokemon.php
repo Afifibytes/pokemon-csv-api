@@ -9,7 +9,6 @@ use Doctrine\ORM\Mapping as ORM;
 class Pokemon
 {
     #[ORM\Id]
-    #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
     private $id;
 
