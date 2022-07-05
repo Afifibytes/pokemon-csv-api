@@ -14,40 +14,40 @@ class Pokemon
     private $id;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private $Name;
+    private $name;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private $Type1;
+    private $type1;
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
-    private $Type2;
+    private $type2;
 
     #[ORM\Column(type: 'integer')]
-    private $Total;
+    private $total;
 
     #[ORM\Column(type: 'integer')]
-    private $HP;
+    private $hp;
 
     #[ORM\Column(type: 'integer')]
-    private $Attack;
+    private $attack;
 
     #[ORM\Column(type: 'integer')]
-    private $Defense;
+    private $defense;
 
     #[ORM\Column(type: 'integer')]
-    private $SpAtk;
+    private $spAtk;
 
     #[ORM\Column(type: 'integer')]
-    private $SpDef;
+    private $spDef;
 
     #[ORM\Column(type: 'integer')]
-    private $Speed;
+    private $speed;
 
     #[ORM\Column(type: 'integer')]
-    private $Generation;
+    private $generation;
 
     #[ORM\Column(type: 'boolean')]
-    private $Legendary;
+    private $legendary;
 
     public function getId(): ?int
     {
@@ -56,144 +56,144 @@ class Pokemon
 
     public function getName(): ?string
     {
-        return $this->Name;
+        return $this->name;
     }
 
-    public function setName(string $Name): self
+    public function setName(string $name): self
     {
-        $this->Name = $Name;
+        $this->name = $name;
 
         return $this;
     }
 
     public function getType1(): ?string
     {
-        return $this->Type1;
+        return $this->type1;
     }
 
-    public function setType1(string $Type1): self
+    public function setType1(string $type1): self
     {
-        $this->Type1 = $Type1;
+        $this->type1 = $type1;
 
         return $this;
     }
 
     public function getType2(): ?string
     {
-        return $this->Type2;
+        return $this->type2;
     }
 
-    public function setType2(?string $Type2): self
+    public function setType2(?string $type2): self
     {
-        $this->Type2 = $Type2;
+        $this->type2 = $type2;
 
         return $this;
     }
 
     public function getTotal(): ?int
     {
-        return $this->Total;
+        return $this->total;
     }
 
-    public function setTotal(int $Total): self
+    public function setTotal(int $total): self
     {
-        $this->Total = $Total;
+        $this->total = $total;
 
         return $this;
     }
 
     public function getHP(): ?int
     {
-        return $this->HP;
+        return $this->hp;
     }
 
-    public function setHP(int $HP): self
+    public function setHP(int $hp): self
     {
-        $this->HP = $HP;
+        $this->hp = $hp;
 
         return $this;
     }
 
     public function getAttack(): ?int
     {
-        return $this->Attack;
+        return $this->attack;
     }
 
-    public function setAttack(int $Attack): self
+    public function setAttack(int $attack): self
     {
-        $this->Attack = $Attack;
+        $this->attack = $attack;
 
         return $this;
     }
 
     public function getDefense(): ?int
     {
-        return $this->Defense;
+        return $this->defense;
     }
 
-    public function setDefense(int $Defense): self
+    public function setDefense(int $defense): self
     {
-        $this->Defense = $Defense;
+        $this->defense = $defense;
 
         return $this;
     }
 
     public function getSpAtk(): ?int
     {
-        return $this->SpAtk;
+        return $this->spAtk;
     }
 
-    public function setSpAtk(int $SpAtk): self
+    public function setSpAtk(int $spAtk): self
     {
-        $this->SpAtk = $SpAtk;
+        $this->spAtk = $spAtk;
 
         return $this;
     }
 
     public function getSpDef(): ?int
     {
-        return $this->SpDef;
+        return $this->spDef;
     }
 
-    public function setSpDef(int $SpDef): self
+    public function setSpDef(int $spDef): self
     {
-        $this->SpDef = $SpDef;
+        $this->spDef = $spDef;
 
         return $this;
     }
 
     public function getSpeed(): ?int
     {
-        return $this->Speed;
+        return $this->speed;
     }
 
-    public function setSpeed(int $Speed): self
+    public function setSpeed(int $speed): self
     {
-        $this->Speed = $Speed;
+        $this->speed = $speed;
 
         return $this;
     }
 
     public function getGeneration(): ?int
     {
-        return $this->Generation;
+        return $this->generation;
     }
 
-    public function setGeneration(int $Generation): self
+    public function setGeneration(int $generation): self
     {
-        $this->Generation = $Generation;
+        $this->generation = $generation;
 
         return $this;
     }
 
     public function isLegendary(): ?bool
     {
-        return $this->Legendary;
+        return $this->legendary;
     }
 
-    public function setLegendary(bool $Legendary): self
+    public function setLegendary(bool $legendary): self
     {
-        $this->Legendary = $Legendary;
+        $this->legendary = $legendary;
 
         return $this;
     }
