@@ -213,4 +213,31 @@ class Pokemon
 
         return false;
     }
+
+    public function isFlyingPokemon(): bool
+    {
+        if ($this->type1 === PokemonTypes::FLYING) {
+            return true;
+        }
+
+        return false;
+    }
+
+    public function isSteelPokemon(): bool
+    {
+        if ($this->type1 === PokemonTypes::STEEL) {
+            return true;
+        }
+
+        return false;
+    }
+
+    public function isBugPokemon(): bool
+    {
+        if ($this->type1 === PokemonTypes::BUG) {
+            return true;
+        }
+
+        return false;
+    }
 }
