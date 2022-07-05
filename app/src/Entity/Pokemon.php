@@ -205,7 +205,7 @@ class Pokemon
         return $this;
     }
 
-    public function isGhostPokemon(): bool
+    public function isGhost(): bool
     {
         if ($this->type1 === PokemonTypes::GHOST) {
             return true;
@@ -214,7 +214,7 @@ class Pokemon
         return false;
     }
 
-    public function isFlyingPokemon(): bool
+    public function isFlying(): bool
     {
         if ($this->type1 === PokemonTypes::FLYING) {
             return true;
@@ -223,7 +223,7 @@ class Pokemon
         return false;
     }
 
-    public function isSteelPokemon(): bool
+    public function isSteel(): bool
     {
         if ($this->type1 === PokemonTypes::STEEL) {
             return true;
@@ -232,7 +232,7 @@ class Pokemon
         return false;
     }
 
-    public function isBugPokemon(): bool
+    public function isBug(): bool
     {
         if ($this->type1 === PokemonTypes::BUG) {
             return true;
