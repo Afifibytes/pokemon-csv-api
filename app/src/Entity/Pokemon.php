@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\PokemonRepository;
 use Doctrine\ORM\Mapping as ORM;
+use PokemonTypes;
 
 #[ORM\Entity(repositoryClass: PokemonRepository::class)]
 class Pokemon
@@ -202,5 +203,14 @@ class Pokemon
         $this->legendary = $legendary;
 
         return $this;
+    }
+
+    public function isGhostPokemon(): bool
+    {
+        if ($this->type1 === PokemonTypes::GHOST) {
+            return true;
+        }
+
+        return false;
     }
 }
