@@ -10,8 +10,12 @@ use PokemonTypes;
 class Pokemon
 {
     #[ORM\Id]
+    #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
     private $id;
+
+    #[ORM\Column(type: 'integer')]
+    private $serial;
 
     #[ORM\Column(type: 'string', length: 255)]
     private $name;
@@ -49,16 +53,21 @@ class Pokemon
     #[ORM\Column(type: 'boolean')]
     private $legendary;
 
-    public function setId(int $id): self
-    {
-        $this->id = $id;
-
-        return $this;
-    }
-
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getSerial(): ?int
+    {
+        return $this->serial;
+    }
+
+    public function setSerial(int $serial): self
+    {
+        $this->serial = $serial;
+
+        return $this;
     }
 
     public function getName(): ?string

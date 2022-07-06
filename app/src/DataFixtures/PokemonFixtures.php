@@ -15,7 +15,7 @@ class PokemonFixtures extends Fixture
 
         for ($i = 0; $i < 10; $i++){
             $pokemon = new Pokemon();
-            $pokemon->setId($faker->unique()->randomDigit());
+            $pokemon->setSerial($faker->unique()->randomDigit());
             $pokemon->setName($faker->name);
             $pokemon->setType1($faker->name);
             $pokemon->setType2($faker->name);
