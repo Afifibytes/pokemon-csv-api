@@ -35,7 +35,7 @@ services:
       - '8080:80'
     volumes:
       - ./app:/var/www/pokemon-api-1-pzezmv
-      - ./nginx/conf.d:/etc/nginx/conf.d/conf.d
+      - ./nginx/conf.d:/etc/nginx/conf.d
     depends_on:
       - php
       - database
